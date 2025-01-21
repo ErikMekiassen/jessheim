@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <audio id="audio-jessheim" autoplay
+        src="media/audio/Diaz - Jessheim.mp3"></audio>
+
+        <script type="text/javascript">
+            var isAudioPlayed = false;
+            function playAudio() {
+                
+                isAudioPlayed = true;
+                const myAudio = document.getElementById("audio-jessheim");
+                myAudio.play();
+            }
+            document.body.onclick = ()=>{
+                if(isAudioPlayed) return ;
+                playAudio();
+            }
+        </script>
+        <!-- HERO SECTION -->
+        <div id="hero-section">
+            <h1>Visit Jessheim</h1>
+            <h2>Besøk en perle ikke langt fra Oslo, Med bare en kort togtur unna kan du besøke Jessheim!
+                <br>
+                (gitt at det ikke har regnet litt eller blitt kuldegrader da kan du forvente forsinkelser)</h2>
+        </div>
+        
+        <!-- ACTIVITIES SECTION -->
+        <div id="activities-section">
+            <h3>Ting man kan besøke på jessheim</h3>
+            <img src="media/images/dystopisk-park.jpeg">
+            <img src="media/images/ullensaker-kulturhus.jpg">
+            <img src="media/images/Jessheim_is_og_flerbrukshall.jpg">
+        </div>
+
+        <!-- GUIDE SECTION -->
+        <div class="card">
+            <img class="avatar" src="media/images/Erik_Mekiassen.jpg"
+                alt="Erik Mekiassen smiling at the camera with a colorful background">
+            <div>
+                <h3>din guide</h3>
+                <p>"Jeg har bodd i jessheim i 18 år og kan vise deg rundt om kring i jessheim"</p>
+                <h4>grøfta, Norway</h4>
+            </div>
+        </div>
+    </body>
+</html>
